@@ -1,0 +1,524 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-container-low": "#111c2d",
+                        "inverse-surface": "#d8e3fb",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "surface-tint": "#d2bbff",
+                        "secondary-container": "#3f465c",
+                        "primary-fixed": "#eaddff",
+                        "surface-variant": "#2a3548",
+                        "on-tertiary": "#00354a",
+                        "surface-container-high": "#1f2a3c",
+                        "primary-fixed-dim": "#d2bbff",
+                        "tertiary-fixed-dim": "#7bd0ff",
+                        "on-tertiary-container": "#caeaff",
+                        "background": "#081425",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#2a3548",
+                        "tertiary-fixed": "#c4e7ff",
+                        "surface-container": "#152031",
+                        "inverse-on-surface": "#263143",
+                        "surface-bright": "#2f3a4c",
+                        "inverse-primary": "#732ee4",
+                        "secondary": "#bec6e0",
+                        "on-surface": "#d8e3fb",
+                        "on-secondary-container": "#adb4ce",
+                        "primary": "#d2bbff",
+                        "surface": "#081425",
+                        "on-error": "#690005",
+                        "tertiary-container": "#006e95",
+                        "on-primary": "#3f008e",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#7c3aed",
+                        "on-surface-variant": "#ccc3d8",
+                        "on-primary-fixed": "#25005a",
+                        "on-tertiary-fixed-variant": "#004c69",
+                        "outline-variant": "#4a4455",
+                        "tertiary": "#7bd0ff",
+                        "surface-dim": "#081425",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "on-background": "#d8e3fb",
+                        "on-primary-fixed-variant": "#5a00c6",
+                        "secondary-fixed": "#dae2fd",
+                        "on-secondary": "#283044",
+                        "on-tertiary-fixed": "#001e2c",
+                        "surface-container-lowest": "#040e1f",
+                        "on-primary-container": "#ede0ff",
+                        "outline": "#958da1",
+                        "text-navy": "#d8e3fb",
+                        "success-green": "#10B981"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "16px",
+                        "3xl": "24px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Montserrat", "sans-serif"],
+                        "headline-lg": ["Montserrat", "sans-serif"],
+                        "headline-lg-mobile": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Montserrat", "sans-serif"],
+                        "data-lg": ["Montserrat", "sans-serif"],
+                        "data-md": ["Montserrat", "sans-serif"],
+                        "body-sm": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "data-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "700"}],
+                        "data-md": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="text-headline-md font-headline-md font-black text-on-surface tracking-tight">PayLink</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-primary font-bold border-b-2 border-primary py-1" href="#">Products</a>
+            <a class="text-secondary hover:text-primary transition-colors py-1" href="#">Company</a>
+            <a class="text-secondary hover:text-primary transition-colors py-1" href="#">Pricing</a>
+            <a class="text-secondary hover:text-primary transition-colors py-1" href="#">Developers</a>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button class="text-secondary font-label-caps hover:text-primary transition-all">Log in</button>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-caps hover:shadow-lg hover:shadow-primary/30 transition-all">Get started</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] hero-glow pointer-events-none"></div>
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col lg:flex-row items-center gap-16 relative z-10">
+            <!-- Hero Content -->
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-primary-container/20 border border-primary/20 rounded-full px-4 py-1.5 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-primary font-label-caps text-[11px]">Now live for businesses in Ghana</span>
+                </div>
+                <h1 class="text-headline-lg-mobile md:text-headline-lg mb-6 tracking-tight text-on-surface leading-[1.1]">
+                    Money that moves at the <br><span class="accent-gradient-text">speed of a message.</span>
+                </h1>
+                <p class="text-body-md text-secondary leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
+                    PayLink is a modern digital wallet built for humans. Send, receive, and track your money with a beautiful, secure experience that scales with your ambition.
+                    Join the future of borderless commerce today.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                    <button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-caps hover:scale-[0.98] transition-all shadow-xl shadow-primary/30 flex items-center gap-2 group">
+                        Get started free
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform" data-original-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                    <button class="text-on-surface border border-outline-variant px-8 py-4 rounded-xl font-label-caps hover:bg-surface-variant transition-all">
+                        Log in
+                    </button>
+                </div>
+                <!-- Social Proof & Trust -->
+                <div class="space-y-6 pt-6 border-t border-outline-variant/30">
+                    <div class="flex items-center justify-center lg:justify-start gap-4">
+                        <div class="flex -space-x-3">
+                            <img alt="User" class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDKDVfED3z0C5hmiTJNZ_Isj86ROI2xgc1n91WMhE7wne-Novl6QX-Mur_ff2VWy4EX2-w5qkTA4bRPSb-JWH38euCkXMBwNB9456d_YdGPbJAelq1uXE-z75uiu0Za_YGsARnVxwRGJ-Dn8n5JlyyQvSVCpXtpvMul00RBaIG7QbR9oj0p4m6H4uEE7Snjr73rSFS02oL66ec8fQ2-0CK1fQ-Pa2QcYk74nY5LENTtOVMFyD5Giw">
+                            <img alt="User" class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc80OSI8kjcDzDJe-bZIjFTNRtwi9aPxL8XeP7-79tYgHiO9SJPdQF9y6fvrgmNuIkNenwv45jLig90rOU5D8Ko4Vw1ndKvSgbu2F8WkT1MtW_DltoXMU6fGagdZWa3sg2dAq2Ngy6o5MfNexvnhL5C6mJW2Xko56e1XEVYuKgMD2aK3hJ7A6QieMiNAIUdoepoaVA4UbLVuWooS-GlZb7djK9ybTHVpi_c_RIoYn8Oh5rh0FYJhw">
+                            <img alt="User" class="w-10 h-10 rounded-full border-2 border-surface bg-surface-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBld-w3OYb7OvlPD8QuKgS2-HmOc_fdleDBTWohFA0yGR6piBJloS5HrbiYyvwSWpoZA2-hfmwqZjVC2598emQra-1nSQL0hMnjsDKZS71B01ThN5yt7GHDX0IdEa5FNSOJLUUz3We2lNxyNBzOUcGp727MWj3D3niWHKw7MWOHs1SL-UYMuE9bbwEsaXAKVmjF34xZiZI944HsOvQmcvygFw78bsO0sxbjgkfUNmxK01g8lRs05Q">
+                            <div class="w-10 h-10 rounded-full border-2 border-surface bg-primary text-on-primary flex items-center justify-center text-[12px] font-bold">+10k</div>
+                        </div>
+                        <span class="text-body-sm font-semibold text-on-surface">Join 10,000+ users worldwide</span>
+                    </div>
+                    <p class="text-body-sm text-secondary/70 flex flex-wrap justify-center lg:justify-start gap-x-4 gap-y-2">
+                        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-success-green fill-1">verified</span> Bank-grade security</span>
+                        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-success-green fill-1">verified</span> No hidden fees</span>
+                        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-success-green fill-1">verified</span> Instant settlement</span>
+                        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-success-green fill-1">verified</span> Trusted by 180+ businesses</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Wallet Card Visual -->
+            <div class="w-full lg:w-1/2 relative">
+                <div class="absolute -inset-10 bg-primary opacity-10 blur-[100px] rounded-full"></div>
+                <div class="relative z-10 flex justify-center lg:justify-end">
+                    <img alt="PayLink Premium App Interface" class="h-[500px] md:h-[600px] w-auto drop-shadow-2xl transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArPEVVwJp98nRPyGxzb6cem09K-hOvY_3BtgVK4IeSOJNDKnaS_CIkBMn0yD-SCvkm2gj9MZuJDMh_2JpPjDW5BZnxJsVFvXeYAgodJWUelogjGxqZA-rXCjyhhV5V2hAkyFGxNM7pvUwJkITVtrimBjh82diiF0l_v7gBqaFeD18BsU26uGJeH0B3GNHUIhesJ1U3j2bRz4A4mtvmTZezcbCXqcn-kfoS-i597fG6ejpfYh0XuDY">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <div class="bg-surface-container border-y border-outline-variant/20 py-16">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="text-center lg:text-left space-y-2">
+                    <p class="text-data-lg font-data-lg text-primary">50K+</p>
+                    <p class="text-label-caps text-secondary uppercase tracking-widest">Transactions/mo</p>
+                </div>
+                <div class="text-center lg:text-left space-y-2">
+                    <p class="text-data-lg font-data-lg text-primary">99.9%</p>
+                    <p class="text-label-caps text-secondary uppercase tracking-widest">Service Uptime</p>
+                </div>
+                <div class="text-center lg:text-left space-y-2">
+                    <p class="text-data-lg font-data-lg text-primary">180+</p>
+                    <p class="text-label-caps text-secondary uppercase tracking-widest">Active Merchants</p>
+                </div>
+                <div class="text-center lg:text-left space-y-2">
+                    <p class="text-data-lg font-data-lg text-primary">2s</p>
+                    <p class="text-label-caps text-secondary uppercase tracking-widest">Avg. Settlement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Grid -->
+    <section class="py-24 md:py-32 bg-background">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-2xl mb-20">
+                <h2 class="text-headline-lg-mobile md:text-headline-md mb-4 text-on-surface">Everything you need to move money</h2>
+                <p class="text-body-md text-secondary leading-relaxed">A wallet designed to feel effortless — with the polish of a modern fintech and none of the traditional friction.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">speed</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Instant transfers</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">Send money to any @handle in seconds. Balances update the moment the transfer completes.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">link</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Request with a link</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">Share a payment link or QR code. Set an amount or leave it open — collect on your terms.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">analytics</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Track everything</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">See your balance history, filter transactions, and download receipts whenever you need them.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]" data-original-icon="account_balance">account_balance</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Simple wallet</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">Link accounts, top up your balance, and see your total at a glance. No complexity.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">verified</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Secure by default</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">Two-factor authentication, biometric login, and encrypted sessions keep your money safe.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-surface-container-low p-10 rounded-3xl shadow-sm border border-outline-variant/30 group transition-all duration-700 hover:bg-surface-container-high">
+                    <div class="w-14 h-14 bg-surface-variant rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
+                        <span class="material-symbols-outlined text-[28px]">devices</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Built for the web</h3>
+                    <p class="text-body-sm text-secondary leading-relaxed mb-6">A responsive, accessible experience that feels great on every device you own.</p>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all" href="#">Learn more <span class="material-symbols-outlined text-[18px]" data-original-icon="arrow_forward">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-24 md:py-32 bg-surface-container-lowest overflow-hidden">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-20">
+                <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">How it works</h2>
+                <p class="text-body-md text-secondary max-w-xl mx-auto">Get up and running with PayLink in less than three minutes.</p>
+            </div>
+            <div class="relative grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
+                <!-- Connector Line (Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-outline-variant/20 -z-0"></div>
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-primary to-primary-container rounded-full shadow-xl mx-auto mb-8 flex items-center justify-center text-on-primary border border-white/20 group-hover:scale-110 transition-transform">
+                        <span class="text-headline-md font-black">1</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Create account</h3>
+                    <p class="text-body-sm text-secondary px-4">Download the app or sign up on the web. Verifying your identity takes under 60 seconds.</p>
+                </div>
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 bg-surface-container-high rounded-3xl shadow-xl mx-auto mb-8 flex items-center justify-center text-primary border border-outline-variant/20 group-hover:scale-110 transition-transform">
+                        <span class="text-headline-md font-black">2</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Send or Request</h3>
+                    <p class="text-body-sm text-secondary px-4">Enter a handle or phone number. Send funds or request payments instantly without fees.</p>
+                </div>
+                <div class="relative z-10 text-center group">
+                    <div class="w-24 h-24 bg-surface-container-high rounded-3xl shadow-xl mx-auto mb-8 flex items-center justify-center text-primary border border-outline-variant/20 group-hover:scale-110 transition-transform">
+                        <span class="text-headline-md font-black">3</span>
+                    </div>
+                    <h3 class="font-bold text-headline-md mb-3 text-on-surface">Track &amp; Scale</h3>
+                    <p class="text-body-sm text-secondary px-4">Monitor every transaction with detailed analytics and automated tax-ready reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 md:py-32 bg-background">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <h2 class="text-headline-lg-mobile md:text-headline-md mb-16 text-on-surface text-center">Loved by ambitious founders</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="bg-surface-container p-8 rounded-3xl border border-outline-variant/20">
+                    <div class="flex gap-1 text-primary mb-6">
+                        <span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span>
+                    </div>
+                    <p class="text-body-md text-on-surface italic mb-8">"PayLink has completely transformed how we handle vendor payments in Accra. It's faster than any bank we've used."</p>
+                    <div class="flex items-center gap-4">
+                        <img alt="Avatar" class="w-12 h-12 rounded-full bg-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1B4c1EXOuCCYEi5X07-U4buI273gnDTMlRi_4w6SDTCnp7gKhqw_LhonyrFGUnLSosx1-I_jfD8vncPtFJ6iJ5xFblCgd05jm5Los3_QMqgGkx0kgUjPzbHJ5aoWkMOp9Fobiu2d3hiW7DH62qd0zTo56P3uriPkOPwtgYcXtNXsoAEd7YunKI2ySJDrjmaUvmj0uCuY2dS25w6FHrzAFYr-QfYHMyBViCKqnfKAPPXJpSSUqIlA">
+                        <div>
+                            <p class="font-bold text-on-surface">Kofi Mensah</p>
+                            <p class="text-body-sm text-secondary">Founder, TechSpace GH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container p-8 rounded-3xl border border-outline-variant/20">
+                    <div class="flex gap-1 text-primary mb-6">
+                        <span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span>
+                    </div>
+                    <p class="text-body-md text-on-surface italic mb-8">"The API documentation is incredible. We integrated PayLink into our store in less than an afternoon."</p>
+                    <div class="flex items-center gap-4">
+                        <img alt="Avatar" class="w-12 h-12 rounded-full bg-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp06kOR-e4EAdruT-pMwvr4fWgx2fjQvTdgi6YTRLAxfaltDEPL74kTnPE-KlkeXEDHg6dV-5RFzdFNEABy4tEF-GUEkWGqhBBi97e-G3jLALBGseVZXCC7cBY32lPGchyMtCeCK2dPAZJ4QbMxcuWnd0w9sMWCJStqDLBuXzv-BepJaElz-a6qndrNft7Lb59peIq4hBoUXPHUeQetZgk0BGq-TQvtUqxrtm87YZVd39f-3ef1CM">
+                        <div>
+                            <p class="font-bold text-on-surface">Sarah Jenkins</p>
+                            <p class="text-body-sm text-secondary">CTO, Bloom Retail</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-surface-container p-8 rounded-3xl border border-outline-variant/20">
+                    <div class="flex gap-1 text-primary mb-6">
+                        <span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span><span class="material-symbols-outlined fill-1">star</span>
+                    </div>
+                    <p class="text-body-md text-on-surface italic mb-8">"Finally, a fintech app that looks as good as it works. The UX is miles ahead of anything else on the market."</p>
+                    <div class="flex items-center gap-4">
+                        <img alt="Avatar" class="w-12 h-12 rounded-full bg-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiF0sZy170BQkxPnf3oGX-IKrJlBPK7DMI-nz7NB4h6KDbXz-8CdcidNxk-SaCdnaWLZknAV0lwNSBGSTWND5vOkW-EtnmRMKf6rYpIdjwsW-SeqPhyCsRs9MAt6EP3py5Hz6DHzV7QTuGylDatJinYxu-0gVfCxXCZGxAxZ6ODGruHwXr1F9q2qUFBSUnO8hEIxjJA-eUxJ_M7dK4_Vx06KKT7tDfmNYnhthWFA3_8D5aabzahfQ">
+                        <div>
+                            <p class="font-bold text-on-surface">Marco Rossi</p>
+                            <p class="text-body-sm text-secondary">Designer, Studio M</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section-->
+    <section class="py-24 md:py-32 bg-surface-container-lowest">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-20">
+                <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Simple, transparent pricing</h2>
+                <p class="text-body-md text-secondary">No hidden fees, no surprises. Choose the plan that fits your scale.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Free -->
+                <div class="bg-surface-container p-10 rounded-3xl border border-outline-variant/30 flex flex-col transition-all duration-700">
+                    <h3 class="text-headline-md font-bold mb-2 text-on-surface">Personal</h3>
+                    <p class="text-body-sm text-secondary mb-6">For individuals and friends.</p>
+                    <div class="mb-8">
+                        <span class="text-data-lg font-data-lg text-on-surface">$0</span>
+                        <span class="text-secondary">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Unlimited P2P transfers</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Virtual card included</li>
+                        <li class="flex items-center gap-3 text-body-sm text-secondary/50"><span class="material-symbols-outlined">cancel</span> Priority support</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary/10 transition-all">Get started</button>
+                </div>
+                <!-- Business -->
+                <div class="bg-surface-container-high p-10 rounded-3xl border-2 border-primary shadow-2xl relative flex flex-col scale-105 z-10 transition-all duration-700">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-[12px] font-bold uppercase tracking-wider">Most Popular</div>
+                    <h3 class="text-headline-md font-bold mb-2 text-on-surface">Business</h3>
+                    <p class="text-body-sm text-secondary mb-6">For growing teams and startups.</p>
+                    <div class="mb-8">
+                        <span class="text-data-lg font-data-lg text-on-surface">$29</span>
+                        <span class="text-secondary">/mo</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-body-sm font-semibold text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Everything in Personal</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Business Dashboard</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> 3% Cash back on ads</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Multi-user access</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl bg-primary text-on-primary font-bold hover:opacity-90 transition-all shadow-lg shadow-primary/20">Try 14 days free</button>
+                </div>
+                <!-- Enterprise -->
+                <div class="bg-surface-container p-10 rounded-3xl border border-outline-variant/30 flex flex-col transition-all duration-700">
+                    <h3 class="text-headline-md font-bold mb-2 text-on-surface">Enterprise</h3>
+                    <p class="text-body-sm text-secondary mb-6">For global organizations.</p>
+                    <div class="mb-8">
+                        <span class="text-data-lg font-data-lg text-on-surface">Custom</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Custom API limits</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> Dedicated account manager</li>
+                        <li class="flex items-center gap-3 text-body-sm text-on-surface"><span class="material-symbols-outlined text-success-green fill-1">check_circle</span> White-label options</li>
+                    </ul>
+                    <button class="w-full py-4 rounded-xl border-2 border-on-surface text-on-surface font-bold hover:bg-on-surface/10 transition-all">Contact sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 md:py-32 bg-background">
+        <div class="max-w-3xl mx-auto px-margin-mobile">
+            <h2 class="text-headline-lg-mobile md:text-headline-md mb-12 text-on-surface text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="group bg-surface-container p-6 rounded-2xl border border-outline-variant/30 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-bold text-on-surface cursor-pointer list-none">
+                        How secure is PayLink?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-secondary leading-relaxed">We use AES-256 bank-grade encryption for all data and 2FA for every account. Your funds are held in regulated partner banks and are fully insured.</p>
+                </details>
+                <details class="group bg-surface-container p-6 rounded-2xl border border-outline-variant/30 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-bold text-on-surface cursor-pointer list-none">
+                        Are there really no fees for P2P transfers?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-secondary leading-relaxed">Yes! Sending money to other PayLink users is completely free, anywhere in the world. We only charge for business-specific features and currency conversions.</p>
+                </details>
+                <details class="group bg-surface-container p-6 rounded-2xl border border-outline-variant/30 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-bold text-on-surface cursor-pointer list-none">
+                        Can I use PayLink for my business in Ghana?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-secondary leading-relaxed">Absolutely. We are fully operational in Ghana, supporting local settlements and mobile money integrations for registered businesses.</p>
+                </details>
+                <details class="group bg-surface-container p-6 rounded-2xl border border-outline-variant/30 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-bold text-on-surface cursor-pointer list-none">
+                        How long does a withdrawal take?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-secondary leading-relaxed">Withdrawals to linked bank accounts typically take 1-3 business days, while withdrawals to supported debit cards or mobile wallets are often instant.</p>
+                </details>
+                <details class="group bg-surface-container p-6 rounded-2xl border border-outline-variant/30 open:shadow-md transition-all">
+                    <summary class="flex justify-between items-center font-bold text-on-surface cursor-pointer list-none">
+                        Is there a developer API?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <p class="mt-4 text-secondary leading-relaxed">Yes, we provide robust REST APIs for automated payments, subscription billing, and real-time transaction webhooks.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="px-margin-mobile md:px-margin-desktop py-24">
+        <div class="max-w-container-max mx-auto bg-gradient-to-br from-surface-container-highest via-primary-container to-primary rounded-[40px] p-12 md:p-32 text-center relative overflow-hidden group">
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/10 blur-[100px] rounded-full"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/20 blur-[100px] rounded-full"></div>
+            <div class="relative z-10">
+                <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-primary-container mb-8 tracking-tight">Your money, <br>beautifully organized.</h2>
+                <p class="text-on-primary-container/80 text-body-md mb-12 max-w-2xl mx-auto leading-relaxed">Sign up in seconds and start sending money like a message. Join thousands of users who have upgraded their daily banking experience.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-on-primary-container text-primary-container px-12 py-5 rounded-full font-bold hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all flex items-center justify-center gap-3 group">
+                        Create your account
+                        <span class="material-symbols-outlined group-hover:rotate-90 transition-transform">add</span>
+                    </button>
+                    <button class="bg-transparent border border-white/30 text-white px-12 py-5 rounded-full font-bold hover:bg-white/10 transition-all">
+                        Talk to sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-24 mt-8 border-t border-outline-variant/10">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-16 gap-x-8">
+            <div class="col-span-2 lg:col-span-2">
+                <span class="text-headline-md font-black text-on-surface block mb-8 tracking-tight">PayLink</span>
+                <p class="text-body-sm text-secondary max-w-xs leading-relaxed mb-8">Empowering the next generation of global commerce with seamless financial infrastructure.</p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-all" href="#">
+                        <span class="material-symbols-outlined text-[20px]">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-all" href="#">
+                        <span class="material-symbols-outlined text-[20px]">terminal</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-all" href="#">
+                        <span class="material-symbols-outlined text-[20px]">alternate_email</span>
+                    </a>
+                </div>
+            </div>
+            <div class="">
+                <h4 class="font-label-caps text-on-surface mb-8 uppercase tracking-widest text-[11px]">Product</h4>
+                <ul class="space-y-4 text-body-sm text-secondary">
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Personal Wallet</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Business Account</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Virtual Cards</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Payment Links</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="font-label-caps text-on-surface mb-8 uppercase tracking-widest text-[11px]">Company</h4>
+                <ul class="space-y-4 text-body-sm text-secondary">
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Newsroom</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="font-label-caps text-on-surface mb-8 uppercase tracking-widest text-[11px]">Resources</h4>
+                <ul class="space-y-4 text-body-sm text-secondary">
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Developer API</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Community</a></li>
+                    <li class=""><a class="hover:text-primary transition-colors" href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="col-span-2 lg:col-span-2 md:col-start-3 lg:col-start-5">
+                <h4 class="font-label-caps text-on-surface mb-6 uppercase tracking-widest text-[11px]">Stay Updated</h4>
+                <form class="space-y-4" onsubmit="event.preventDefault()">
+                    <div class="relative">
+                        <input class="w-full bg-surface-container border border-outline-variant/30 rounded-xl py-4 px-5 text-sm text-on-surface placeholder:text-secondary focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Email address" type="email">
+                        <button class="absolute right-2 top-2 bottom-2 bg-primary text-on-primary px-4 rounded-lg hover:opacity-90 transition-all" type="submit">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                    <p class="text-[11px] text-secondary">Receive weekly</p></form></div></div></div></footer></body></html>
